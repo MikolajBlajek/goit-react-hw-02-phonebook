@@ -1,0 +1,39 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin: auto; 
+    border: 1px solid black; 
+    padding-bottom: 15px;
+  }
+  
+  input[type="text"],
+  input[type="tel"] {
+    width: 85%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid gray; /* Początkowo przezroczysta ramka */
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Płynne przejście koloru obramowania */
+  }
+  
+  input[type="text"]:focus,
+  input[type="tel"]:focus {
+    border-color: dodgerblue; /* Ramka zmienia kolor na niebieski podczas zaznaczenia tekstu */
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #007bff; /* Płynne przejście koloru tła przycisku po najechaniu kursorem */
+  }
